@@ -20,3 +20,25 @@ pip install -r requirements.txt
 
 # Run validation tests
 python -m pytest tests/
+```
+
+## Full Validation Guide | Cite This Work
+
+---
+
+### **Critical Components**
+1. **Modified CLASS Boltzmann Solver**  
+   Subfolder `code/boltzmann_solver/TFM-CLASS` contains custom modifications to compute \( C_\ell^{\text{TFM}} \).
+
+2. **HPC Parameter Files**  
+   Example configuration for cosmic acceleration simulations:
+   ```yaml
+   # params/cosmic_accel_params.yaml
+   alpha: 0.1       # Time wave dissipation rate
+   beta: 14.8       # Wave-lump correlation length (kpc)
+   Gamma: 1e-5      # Micro-Big Bang rate
+   H0: 72.0         # Initial Hubble parameter
+   ```
+
+## Automated Figure Generation
+Jupyter notebooks in `docs/derivations/` regenerate all paper figures from raw data.
